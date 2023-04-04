@@ -31,7 +31,7 @@ function onWatchBanner(e) {
             info.nameBanner = document.querySelector(".banner").getAttribute('name')
             info.nameBanner.toString()
             info.urlWebsite = window.location.href
-            info.time = new Date().toLocaleString()
+            info.date = new Date().toLocaleString()
             info.action = 0
 
 
@@ -48,7 +48,7 @@ function onClickBanner() {
         info.nameBanner = document.querySelector(".banner").getAttribute('name')
         info.nameBanner.toString()
         info.urlWebsite = window.location.href
-        info.time = date.toLocaleString()
+        info.date = date.toLocaleString()
         info.action = 1
 
 
