@@ -26,12 +26,12 @@ function onWatchBanner(e) {
 
         if (bannerPosBot < window.innerHeight && !sawBanners.includes(banner.id))
         {
-            let date = new Date()
+            let dateLocal = new Date()
 
             info.nameBanner = document.querySelector(".banner").getAttribute('name')
             info.nameBanner.toString()
             info.urlWebsite = window.location.href
-            info.date = new Date().toLocaleString()
+            info.date = dateLocal.toLocaleString()
             info.action = 0
 
 
@@ -43,12 +43,12 @@ function onWatchBanner(e) {
 function onClickBanner() {
     document.addEventListener("click", function(e) {
 
-        let date = new Date()
+        let dateLocal = new Date()
 
         info.nameBanner = document.querySelector(".banner").getAttribute('name')
         info.nameBanner.toString()
         info.urlWebsite = window.location.href
-        info.date = date.toLocaleString()
+        info.date = dateLocal.toLocaleString()
         info.action = 1
 
 
